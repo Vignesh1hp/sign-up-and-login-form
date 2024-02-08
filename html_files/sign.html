@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing-up form</title>
+    <link rel="stylesheet" href="/CSS files/style.css">
+</head>
+
+<body>
+    <div class="center-div">
+        <!-- This is outer-box for wrapping -->
+        <div class="outer-box">
+            <div class="heading">
+                <h1>Sign-up form</h1>
+            </div>
+            <form action="#">
+                <div class="elements">
+                    <label for="fname">First Name:</label>
+                    <input type="text" required id="fname">
+                </div>
+
+                <div class="elements">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" required id="lname">
+
+                </div>
+                <div class="elements">
+                    <label for="email">Email:</label>
+                    <input type="email" required id="email">
+                </div>
+                <div class="elements">
+                    <label for="password">Password:</label>
+                    <input type="password" required id="password">
+                </div>
+
+                <div class="elements">
+                    <label for="password">Conform Password:</label>
+                    <input type="password" required id="password">
+                </div>
+                
+                <p>Gender:</p>
+                <div class="elements_gender elements">
+                    <div class="male">
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="female">
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" onclick="validateForm()">Sign-up</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/javaScript files/validateForm.js">
+
+</script>
+
+
+</html>
